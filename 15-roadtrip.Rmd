@@ -1,0 +1,31 @@
+---
+title: "AppEx 15: More Inference"
+author: "Your name here"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r packages, echo=TRUE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(infer)
+songs <- read_csv("data/songs.csv")
+```
+
+
+## Exercises
+
+1. The data in `songs` contain the length in minutes of the 3,000 songs I have
+on my phone (the entire population). What is the population mean and 
+standard deviation of song length?
+
+2. What is the probability that a randomly selected song is longer than 5
+minutes long?
+
+3. Set seed `12345` and take a random sample of 100 songs. Construct a 95% 
+confidence interval for the mean song length using your random sample. Did your
+interval contain the true population value?
+
+4. I’m about to take a trip to visit friends and the drive is 6 hours, and
+suppose I make a random playlist of 100 songs. What is the probability that my 
+playlist lasts the entire drive? 
